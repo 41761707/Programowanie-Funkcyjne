@@ -149,3 +149,6 @@ Prelude| mymax [x] = x
 Prelude| mymax (x:xs) | x > maxTail = x | otherwise = maxTail where maxTail = mymax xs
 lub 
 Prelude| :}
+
+41.
+evens = foldr (\x acc -> if mod x 2 == 0 then x:acc else acc) []
